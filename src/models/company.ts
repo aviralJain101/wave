@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const companySchema = new mongoose.Schema({//to company middleware in mongoose
+const companySchema: mongoose.Schema = new mongoose.Schema({//to company middleware in mongoose
     name:{
         type:String,
         required:true,
@@ -13,8 +13,4 @@ const companySchema = new mongoose.Schema({//to company middleware in mongoose
 });
 
 
-
-
-const Company = mongoose.model('Company',companySchema);
-
-module.exports = Company;
+export default mongoose.model('Company', companySchema);
