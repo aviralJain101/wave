@@ -12,7 +12,7 @@ router.get('/company/:id', companyController.getCompanyById)
 //Create a new company
 router.post('/company', companyController.createCompany);
 
-//Delete a company
+//Delete a company with company id
 //TODO : Add a admin auth middleware
 router.delete('/company/:id', companyController.deleteCompany)
 
